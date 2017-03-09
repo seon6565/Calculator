@@ -28,14 +28,7 @@ public class Main3Activity extends AppCompatActivity {
         c1 = (CheckBox)findViewById(R.id.c1);
         t1 = (TextView)findViewById(R.id.t1);
         t2 = (TextView)findViewById(R.id.t2);
-        b10.setOnClickListener(new View.OnClickListener() {
-                                   @Override
-                                   public void onClick(View v) {
-                                       Intent intent = new Intent(Main3Activity.this,Main4Activity.class);
-                                       startActivity(intent);
-                                   }
-                               }
-        );
+
         b1.setOnClickListener(new View.OnClickListener() {
                                   @Override
                                   public void onClick(View v) {
@@ -52,13 +45,23 @@ public class Main3Activity extends AppCompatActivity {
                                       if (c1.isChecked()) {
                                           price = ((i * 15000) + (j * 13000) + (k * 9000)) * 90 / 100;
                                       }
+/*스트링으로 변환*/
 
-                                      t1.setText(count);
-                                      t2.setText(price);
+                                      t1.setText(count+"개");
+                                      t2.setText(price+"원");
 
 
                                   }
                               }
+        );
+
+        b10.setOnClickListener(new View.OnClickListener() {
+                                   @Override
+                                   public void onClick(View v) {
+                                       Intent intent = new Intent(Main3Activity.this,Main4Activity.class);
+                                       startActivity(intent);
+                                   }
+                               }
         );
 
     }
