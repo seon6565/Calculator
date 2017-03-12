@@ -33,12 +33,11 @@ public class Main3Activity extends AppCompatActivity {
                                   @Override
                                   public void onClick(View v) {
                                       String a = e1.getText().toString();
-                                      String b = e1.getText().toString();
-                                      String c = e1.getText().toString();
                                       int i = Integer.parseInt(a);
+                                      String b = e2.getText().toString();
                                       int j = Integer.parseInt(b);
+                                      String c = e3.getText().toString();
                                       int k = Integer.parseInt(c);
-
 
                                       int count = i + j + k;
                                       int price = (i * 15000) + (j * 13000) + (k * 9000);
@@ -49,8 +48,6 @@ public class Main3Activity extends AppCompatActivity {
 
                                       t1.setText(count+"개");
                                       t2.setText(price+"원");
-
-
                                   }
                               }
         );

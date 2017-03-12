@@ -27,20 +27,20 @@ public class Main4Activity extends AppCompatActivity {
                                   public void onClick(View v) {
                                       String a = e1.getText().toString();
                                       String b = e2.getText().toString();
-                                      int i = Integer.parseInt(a);
-                                      int j = Integer.parseInt(b);
-                                      if(a.isEmpty() && b.isEmpty()){
-                                          Toast.makeText(Main4Activity.this, "값을 입력하세요", Toast.LENGTH_SHORT).show();
-                                          if(a.isEmpty()){
-                                              e1.requestFocus();/*포커스찾기*/
+                                          if(a.isEmpty()) {
+                                              e1.requestFocus();
+                                              Toast.makeText(Main4Activity.this, "값을 입력하세요", Toast.LENGTH_SHORT).show();
                                           }
-                                          else if(b.isEmpty()){
-                                              e2.requestFocus();
+                                          else if (b.isEmpty()) {
+                                                  e2.requestFocus();
+                                                  Toast.makeText(Main4Activity.this, "값을 입력하세요", Toast.LENGTH_SHORT).show();
                                           }
-                                      }
-                                      else {
-                                          Toast.makeText(Main4Activity.this, "더하기 계산결과는" + (i + j), Toast.LENGTH_SHORT).show();
-                                      }
+                                          else {
+                                                  int i = Integer.parseInt(a);
+                                                  int j = Integer.parseInt(b);
+                                                  Toast.makeText(Main4Activity.this, "더하기 계산결과는" + (i + j), Toast.LENGTH_SHORT).show();
+                                          }
+
 
                                   }
                               }
@@ -52,19 +52,18 @@ public class Main4Activity extends AppCompatActivity {
                                   public void onClick(View v) {
                                       String a = e1.getText().toString();
                                       String b = e2.getText().toString();
-                                      int i = Integer.parseInt(a);
-                                      int j = Integer.parseInt(b);
-                                      if(a.isEmpty() && b.isEmpty()){
+                                      if(a.isEmpty()) {
+                                          e1.requestFocus();
                                           Toast.makeText(Main4Activity.this, "값을 입력하세요", Toast.LENGTH_SHORT).show();
-                                          if(a.isEmpty()){
-                                              e1.requestFocus();
-                                          }
-                                          else if(b.isEmpty()){
-                                              e2.requestFocus();
-                                          }
+                                      }
+                                      else if (b.isEmpty()) {
+                                          e2.requestFocus();
+                                          Toast.makeText(Main4Activity.this, "값을 입력하세요", Toast.LENGTH_SHORT).show();
                                       }
                                       else {
-                                          Toast.makeText(Main4Activity.this, "빼기 계산결과는" + (i - j), Toast.LENGTH_SHORT).show();
+                                          int i = Integer.parseInt(a);
+                                          int j = Integer.parseInt(b);
+                                          Toast.makeText(Main4Activity.this, "더하기 계산결과는" + (i + j), Toast.LENGTH_SHORT).show();
                                       }
                                   }
                               }
@@ -74,20 +73,18 @@ public class Main4Activity extends AppCompatActivity {
                                   public void onClick(View v) {
                                       String a = e1.getText().toString();
                                       String b = e2.getText().toString();
-                                      int i = Integer.parseInt(a);
-                                      int j = Integer.parseInt(b);
-                                      if(a == null && b == null){
+                                      if(a.isEmpty()) {
+                                          e1.requestFocus();
                                           Toast.makeText(Main4Activity.this, "값을 입력하세요", Toast.LENGTH_SHORT).show();
-                                          if(a.isEmpty()){
-                                              e1.requestFocus();
-                                          }
-                                          else if(b.isEmpty()){
-                                              e2.requestFocus();
-                                          }
+                                      }
+                                      else if (b.isEmpty()) {
+                                          e2.requestFocus();
+                                          Toast.makeText(Main4Activity.this, "값을 입력하세요", Toast.LENGTH_SHORT).show();
                                       }
                                       else {
-
-                                          Toast.makeText(Main4Activity.this, "곱하기 계산결과는"+ (i*j), Toast.LENGTH_SHORT).show();
+                                          int i = Integer.parseInt(a);
+                                          int j = Integer.parseInt(b);
+                                          Toast.makeText(Main4Activity.this, "더하기 계산결과는" + (i + j), Toast.LENGTH_SHORT).show();
                                       }
                                   }
                               }
@@ -97,19 +94,18 @@ public class Main4Activity extends AppCompatActivity {
                                   public void onClick(View v) {
                                       String a = e1.getText().toString();
                                       String b = e2.getText().toString();
-                                      int i = Integer.parseInt(a);
-                                      int j = Integer.parseInt(b);
-                                      if(a.isEmpty() && b.isEmpty()){
+                                      if(a.isEmpty()) {
+                                          e1.requestFocus();
                                           Toast.makeText(Main4Activity.this, "값을 입력하세요", Toast.LENGTH_SHORT).show();
-                                          if(a.isEmpty()){
-                                              e1.requestFocus();
-                                          }
-                                          else if(b.isEmpty()){
-                                              e2.requestFocus();
-                                          }
+                                      }
+                                      else if (b.isEmpty()) {
+                                          e2.requestFocus();
+                                          Toast.makeText(Main4Activity.this, "값을 입력하세요", Toast.LENGTH_SHORT).show();
                                       }
                                       else {
-                                          Toast.makeText(Main4Activity.this, "나누기 계산결과는" + (i / j), Toast.LENGTH_SHORT).show();
+                                          int i = Integer.parseInt(a);
+                                          int j = Integer.parseInt(b);
+                                          Toast.makeText(Main4Activity.this, "더하기 계산결과는" + (i + j), Toast.LENGTH_SHORT).show();
                                       }
                                   }
                               }
