@@ -63,7 +63,7 @@ public class Main4Activity extends AppCompatActivity {
                                       else {
                                           int i = Integer.parseInt(a);
                                           int j = Integer.parseInt(b);
-                                          Toast.makeText(Main4Activity.this, "더하기 계산결과는" + (i + j), Toast.LENGTH_SHORT).show();
+                                          Toast.makeText(Main4Activity.this, "빼기 계산결과는" + (i - j), Toast.LENGTH_SHORT).show();
                                       }
                                   }
                               }
@@ -84,7 +84,7 @@ public class Main4Activity extends AppCompatActivity {
                                       else {
                                           int i = Integer.parseInt(a);
                                           int j = Integer.parseInt(b);
-                                          Toast.makeText(Main4Activity.this, "더하기 계산결과는" + (i + j), Toast.LENGTH_SHORT).show();
+                                          Toast.makeText(Main4Activity.this, "곱하기 계산결과는" + (i * j), Toast.LENGTH_SHORT).show();
                                       }
                                   }
                               }
@@ -103,9 +103,9 @@ public class Main4Activity extends AppCompatActivity {
                                           Toast.makeText(Main4Activity.this, "값을 입력하세요", Toast.LENGTH_SHORT).show();
                                       }
                                       else {
-                                          int i = Integer.parseInt(a);
-                                          int j = Integer.parseInt(b);
-                                          Toast.makeText(Main4Activity.this, "더하기 계산결과는" + (i + j), Toast.LENGTH_SHORT).show();
+                                          double i = Double.parseDouble(a);
+                                          double j = Double.parseDouble(b);
+                                          Toast.makeText(Main4Activity.this, "나누기 계산결과는" + ((int)(i / j)), Toast.LENGTH_SHORT).show();
                                       }
                                   }
                               }
